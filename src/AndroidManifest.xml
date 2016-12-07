@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ijinshan.liemoapp">
+    package="com.wencai.demo">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <!-- baidu需要加的权限 六个必需权限  -->
@@ -33,14 +33,14 @@
     <!--for window manager  test-->
 
     <application
-        android:name="com.ijinshan.liemo.application.DemoApplication"
+        android:name=".application.DemoApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
 
         <activity
-            android:name="com.ijinshan.liemo.activities.WelcomeActivity"
+            android:name=".activities.WelcomeActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -50,22 +50,26 @@
         </activity>
 
         <activity
-            android:name="com.ijinshan.liemo.activities.MainActivity"
+            android:name=".activities.MainActivity"
             android:label="@string/app_name" />
 
         <activity
-            android:name="com.ijinshan.liemo.activities.LoadingViewActivity"
+            android:name=".activities.LoadingViewActivity"
             android:label="@string/app_name" />
 
         <activity
-            android:name="com.ijinshan.liemo.activities.VPNActivity"
+            android:name=".activities.VPNActivity"
             android:label="@string/app_name" />
 
-        <service android:name="com.ijinshan.liemo.ImageService" />
+        <service android:name=".ImageService" />
 
         <provider
-            android:name="com.ijinshan.liemo.contentproviders.MyContentProvider"
-            android:authorities="liemo.test.setting.provider"/>
+            android:name=".contentproviders.MyContentProvider"
+            android:authorities="liemo.test.setting.provider"/><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>
