@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BottomIcon">
+        <attr name="img" format="reference" />
+        <attr name="text" format="string" />
+        <attr name="textcolor" format="string" />
+        <attr name="textsize" format="integer" />
+    </declare-styleable>
+</resources>

@@ -5,8 +5,8 @@
 .DS_Store
 /build
 /captures
-LiemoDemo.iml
-LiemoApp.iml
+WenCaiDemo.iml
+Demo.iml
 gradlew
 gradlew.bat
 gradle.properties
