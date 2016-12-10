@@ -1,28 +1,26 @@
 package com.wencai.demo.fragments;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ExpandableListView;
+import android.widget.FrameLayout;
 
 import com.wencai.demo.R;
-import com.wencai.demo.fragments.adapters.MainListAdapter;
 
 /**
  * Created by Li Guoqing on 2016/12/6.
  */
-public class MainFragment extends Fragment {
-    private ExpandableListView mExpandableListView;
+public class CommonFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_home, null);
-        mExpandableListView = (ExpandableListView) view.findViewById(R.id.main_content);
-        mExpandableListView.setAdapter(new MainListAdapter(getContext()));
+        View view = new FrameLayout(getActivity());
+        view.setBackgroundColor(Color.parseColor("#ffffff"));
         return view;
     }
 }

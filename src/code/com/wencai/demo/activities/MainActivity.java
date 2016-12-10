@@ -8,6 +8,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 
 import com.wencai.demo.R;
+import com.wencai.demo.fragments.CommonFragment;
 import com.wencai.demo.fragments.MainFragment;
 import com.wencai.demo.fragments.SettingsFragment;
 import com.wencai.demo.views.BottomIcon;
@@ -24,6 +25,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     private FragmentManager mFragmentManager;
     private MainFragment mMainFragment;
     private SettingsFragment mSettingsFragment;
+    private CommonFragment mCommonFragment;
 
     private BottomIcon mButton1;
     private BottomIcon mButton2;
@@ -73,6 +75,15 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                 fragment = mSettingsFragment;
                 break;
             }
+            case INDEX_SHOP_FRAGMENT:
+            case INDEX_FAVOR_FRAGMENT:{
+                if (mCommonFragment == null) {
+                    mCommonFragment = new CommonFragment();
+                    transaction.add(R.id.main_fragment, mCommonFragment, index + "");
+                }
+                fragment = mCommonFragment;
+                break;
+            }
         }
 
         if (fragment == null) {
@@ -94,6 +105,9 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         }
         if (mSettingsFragment != null) {
             transaction.hide(mSettingsFragment);
+        }
+        if (mCommonFragment != null) {
+            transaction.hide(mCommonFragment);
         }
     }
 
