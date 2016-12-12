@@ -5,10 +5,9 @@
 .DS_Store
 /build
 /captures
-WenCaiDemo.iml
+/WenCaiDemo.iml
 Demo.iml
 gradlew
 gradlew.bat
 gradle.properties
 /sub-project/sub-project.iml
-/build.gradle
