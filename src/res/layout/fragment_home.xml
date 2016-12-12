@@ -33,7 +33,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="20dp"
             android:background="@drawable/main_circle_button"
-            android:src="@mipmap/category" />
+            android:src="@mipmap/catego" />
 
         <TextView
             android:layout_width="match_parent"
