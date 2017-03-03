@@ -61,10 +61,11 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:support-v4:23.2.0'
-//    compile(name:'volley', ext:'aar')
+    //    compile(name:'volley', ext:'aar')
     compile files('libs/nineoldandroids-2.4.0.jar')
     compile project(':sub-project:network')
-    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+//    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile files('libs/MiAdSdk.jar')
 }

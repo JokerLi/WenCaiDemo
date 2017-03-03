@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/ad_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ad_icon"
+        android:textColor="@android:color/background_dark"
+        android:text="Title" />
+
+    <TextView
+        android:id="@+id/ad_cta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="Title" />
+
+
+    <ImageView
+        android:id="@+id/ad_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:id="@+id/ad_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/ad_icon"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/ad_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ad_image"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:text="Title" />
+</RelativeLayout>
